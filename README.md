@@ -1,11 +1,11 @@
-About sql-metadata
-==================
+About sql-metadata-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sql-metadata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/macbre/sql-metadata
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sql-metadata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Uses tokenized query returned by python-sqlparse and generates query metadata
 
