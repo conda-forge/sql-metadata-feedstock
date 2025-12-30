@@ -1,5 +1,5 @@
 {% set name = "sql-metadata" %}
-{% set version = "2.6.0" %}
+{% set version = "2.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sql_metadata-{{ version }}.tar.gz
-  sha256: 2242603497bbcdb6e565c883df7b48eb85e19439acab54026a0e2b1cae6b5fe6
+  sha256: 901456eb877356da3e51cd61e3af7b99cb509f18bc4f516815fc442e609f4189
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }},<4.0
-    - sqlparse >=0.4.1,<0.5.0
+    - sqlparse >=0.4.1,<0.6.0
 
 test:
   imports:
