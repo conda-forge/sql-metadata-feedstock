@@ -1,5 +1,5 @@
 {% set name = "sql-metadata" %}
-{% set version = "2.19.0" %}
+{% set version = "2.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sql_metadata-{{ version }}.tar.gz
-  sha256: 901456eb877356da3e51cd61e3af7b99cb509f18bc4f516815fc442e609f4189
+  sha256: d680dc58a82daa30e50c136b61463b2cc49c3fc092d251f21e327a327bb91dc1
 
 build:
   noarch: python
